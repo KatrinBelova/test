@@ -1,0 +1,55 @@
+.contacts
+	margin-top 140px
+	&_bold
+		font-weight 800
+	&__title,
+	&__caption,
+	&__info
+		color salmon
+	&__title
+		font-size 10px
+		letter-spacing 2.5px
+	&__caption
+		font-size 54px
+		line-height 3.45rem
+	&__info
+		margin-top 80px
+		display flex
+		justify-content space-between
+	&__mail,
+	&__phone
+		border-top 2px solid salmon
+	&__mail
+		font-size 36px
+		line-height 4rem
+	&__phone
+		display flex
+		flex-direction column
+		padding-top 12px
+		line-height 1.56rem
+		span
+			display block
+			font-size 18px
+			font-weight 200		
+	&__adress
+		font-size 16px
+		margin-top 245px
+		margin-bottom 112px
+		color light_blue
+		font-weight 200
+		line-height 1.45rem
+
+@media screen and (max-width: 768px)
+	.contacts
+		&__info
+			flex-direction column
+			align-items flex-start
+		&__phone
+			margin-top 80px
+	
+@media screen and (max-width: 480px)
+	.contacts
+		&__caption
+			font-size 38px
+		&__adress
+			margin-top 190px
